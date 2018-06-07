@@ -36,6 +36,7 @@ def create_message(sender, to, subject, message_text):
     message = MT(message_text)
     
     message['to'] = to
+    # message['cc'] = "sendacopyto@greatmail.org"
     message['from'] = sender
     message['subject'] = subject
 
